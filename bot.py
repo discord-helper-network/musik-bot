@@ -19,12 +19,6 @@ async def status_task():
         await asyncio.sleep(10)
 
 
-@bot.event
-async def on_voice_state_update(member, before, after):
-
-    if member.id == 234567890:
-        await member.move_to(None)
 
 
-
-bot.run("OTM4NDQyODg3NDg0NTU5Mzcw.YfqXCw.r9BlsG8thd9Jn8yDVmNOpTlIOcM")
+bot.run("TOKEN")
