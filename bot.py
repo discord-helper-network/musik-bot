@@ -1,6 +1,13 @@
 import discord
 import asyncio
 from discord.ext import commands
+import json
+
+with open('config.json') as f:
+    data = json.load(f)
+    token = data["TOKEN"]
+    
+
 
 bot = commands.Bot(command_prefix='!')
 
@@ -21,4 +28,4 @@ async def status_task():
 
 
 
-bot.run("TOKEN")
+bot.run(token)
