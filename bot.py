@@ -30,7 +30,7 @@ async def on_ready():
 async def status_task():
     while True:
         await bot.change_presence(activity=discord.Game('created by Discord Helper Network'),
-                                     status=discord.Status.offline)
+                                     status=discord.Status.online)
         await asyncio.sleep(10)
 
 
