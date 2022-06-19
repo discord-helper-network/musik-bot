@@ -1,3 +1,4 @@
+#Please do not change anything here. All things come into the config.json
 import discord
 import asyncio
 from discord.ext import commands
@@ -13,7 +14,7 @@ bot = commands.Bot(command_prefix='!')
 
 bot.load_extension("cogs.music")
 
-
+#Please do not change anything here. All things come into the config.json
 @bot.event
 async def on_ready():
     
@@ -35,5 +36,5 @@ async def status_task():
 
 
 
-
+#Please do not change anything here. All things come into the config.json
 bot.run(token)
